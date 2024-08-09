@@ -70,7 +70,7 @@ function deactivateNightMode() {
 
 function resetNightTimeout() {
     clearTimeout(nightTimeout);
-    nightTimeout = setTimeout(activateNightMode, 30000); // Reativa o modo noturno após 30 segundos
+    nightTimeout = setTimeout(activateNightMode, 20000); // Reativa o modo noturno após 20 segundos
 }
 
 // Inicialize a primeira mensagem ao clicar no botão
