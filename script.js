@@ -15,7 +15,7 @@ const messages = [
     "E que as descobertas de Lufa-Lufa sejam sempre verdadeiras, Como a lealdade e a coragem das mais nobres maneiras.",
     "Adeus, por ora, mas lembre-se sempre, Que a magia que compartilhamos é um eterno presente;",
     "Nos veremos novamente, seja em sonhos ou feitiços, Na próxima trama de nossas vidas, repleta de encantos e riscos.",
-    "Beijos e abraços Beatriz ❤❤❤,"
+    "Beijos e abraços Beatriz ❤❤❤"
 ];
 
 let currentMessageIndex = -1; // Inicialize com -1 para exibir a primeira mensagem no primeiro clique
