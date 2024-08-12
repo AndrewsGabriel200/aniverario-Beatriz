@@ -549,19 +549,25 @@ button:hover {
     }
 
     .cloud-4 {
-        top: 50.62em;
+        top: 56.62em;
         animation-delay: 6.5s;
     }
 
     .cloud-5 {
-        top: 3.37em;
+        top: 8.37em;
         left: 35em;
         animation-delay: 9s;
     }
 
     .cloud-6 {
-        top: 10.62em;
+        top: 16.62em;
         animation-delay: 7.5s;
+    }
+
+    .cloud-7 {
+        top: 50.62em;
+        left: 44em;
+        animation-delay: 8.5s;
     }
 
 }
