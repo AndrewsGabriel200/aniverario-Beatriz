@@ -345,19 +345,7 @@ body {
 
 @keyframes cloud-float {
     100% {
-        transform: translateX(-50em);
-    }
-}
-
-@keyframes stars-twinkle {
-
-    0%,
-    100% {
-        opacity: 0.8;
-    }
-
-    50% {
-        opacity: 1;
+        transform: translateX(-55em);
     }
 }
 
@@ -408,11 +396,15 @@ body {
     top: 15.62em;
     animation-delay: 11.5s;
 }
+.cloud-5 {
+    top: 35em;
+    left: 53em;
+}
 
 .speech-bubble {
     position: absolute;
     bottom: 21.76em;
-    left: 83%;
+    left: 78%;
     transform: translateX(-50%);
     background-color: #fff;
     border: 2px solid #000;
@@ -438,8 +430,8 @@ body {
 
 button {
     position: absolute;
-    bottom: 3rem;
-    left: 25%;
+    bottom: 5rem;
+    left: 40%;
     transform: translateX(-50%);
     padding: 15px 20px;
     font-size: 16px;
@@ -478,4 +470,98 @@ button:hover {
     .wrapper {
         font-size: 12px;
     }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .container {
+        height: 33.90em;
+        width: 14.87em;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        animation: fly 6s infinite;
+    }
+
+    .speech-bubble {
+        position: absolute;
+        bottom: 37.76em;
+        left: 60%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        border: 2px solid #000;
+        border-radius: 10px;
+        padding: 10px;
+        width: 200px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        display: none;
+    }
+
+    .speech-bubble:after {
+        content: "";
+        position: absolute;
+        bottom: -17px;
+        left: 5%;
+        transform: translateX(440%);
+        border-width: 10px;
+        border-style: solid;
+        border-color: #fff transparent transparent transparent;
+    }
+
+    button {
+        position: absolute;
+        bottom: 10rem;
+        left: 33%;
+        transform: translateX(-50%);
+        padding: 20px 25px;
+        font-size: 16px;
+        background-color: #202020;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        z-index: 2;
+        animation: pulse 1.5s infinite;
+        /* Adiciona a animação de pulsação */
+    }
+
+    .cloud-1 {
+        top: 21.75em;
+        animation-delay: 2s;
+    }
+
+    .cloud-2 {
+        top: 28.37em;
+        animation-delay: 5.5s;
+    }
+
+    .cloud-3 {
+        top: 37em;
+        animation-delay: 3s;
+    }
+
+    .cloud-4 {
+        top: 50.62em;
+        animation-delay: 6.5s;
+    }
+
+    .cloud-5 {
+        top: 3.37em;
+        left: 35em;
+        animation-delay: 9s;
+    }
+
+    .cloud-6 {
+        top: 10.62em;
+        animation-delay: 7.5s;
+    }
+
 }
