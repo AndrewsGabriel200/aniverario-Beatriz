@@ -1,21 +1,21 @@
 const messages = [
     "Oi Bea, eu sou o Harry. Soube que é seu aniversário, então vim aqui para passar uma mensagem do seu amigo Andrews.",
     "Ele me disse que agradece muito por ter conhecido alguém incrível, inteligente e esforçada como você.",
-    "Que é graças a você que ele tenta fazer um bom trabalho todos os dias na GECOB, pois 95% de tudo que ele sabe, você ensinou.",
+    "Que é graças a você que ele tenta fazer um bom trabalho todos os dias na GECOB, pois 95% ou até mesmo 100% de tudo que ele sabe, você ensinou.",
     "Ele também falou que ama aquele momento do dia em que diz 'Oi Beaaa' e vê o sorriso lindo que você tem.",
     "Também me contou que, embora possa não ser muito bom com palavras e às vezes pareça um pouco estranho e calado,",
     "ele se sente muito feliz por ter sua amizade e acho que ele gostaria de saber se você sente o mesmo.",
     "Então é isso, Bea. Parabéns pelo seu dia e que venham muitos outros aniversários,",
     "mais antes de ir um poema de adeus,",
     "Adeus, Joven Bruxo(a) No castelo de Hogwarts, onde a magia é real, Nos despedimos agora,",
-    "com um toque especial. Os feitiços da amizade, com sua luz, brilham, Mesmo que separados, nossos corações não se afastam.,",
+    "com um toque especial. Os feitiços da amizade, com sua luz, brilham, Mesmo que separados, nossos corações não se afastam,",
     "Que a varinha da sorte te guie com precisão, Como um feitiço lançado com pura intenção,",
-    "Que as estrelas de Grifinória ilumine seu caminho, E os segredos de Sonserina te tragam um destino.,",
+    "Que as estrelas de Grifinória ilumine seu caminho, E os segredos de Sonserina te tragam um destino,",
     "Ao partir para novas aventuras e mistérios, Que os encantos de Corvinal tragam novos critérios,",
     "E que as descobertas de Lufa-Lufa sejam sempre verdadeiras, Como a lealdade e a coragem das mais nobres maneiras.",
-    "Adeus, por ora, mas lembre-se sempre, Que a magia que compartilhamos é um eterno presente.",
+    "Adeus, por ora, mas lembre-se sempre, Que a magia que compartilhamos é um eterno presente;",
     "Nos veremos novamente, seja em sonhos ou feitiços, Na próxima trama de nossas vidas, repleta de encantos e riscos.",
-    "Adeus Beatriz <3 <3 <3,"
+    "Beijos e abraços Beatriz <3 <3 <3,"
 ];
 
 let currentMessageIndex = -1; // Inicialize com -1 para exibir a primeira mensagem no primeiro clique
@@ -51,10 +51,10 @@ function activateNightMode() {
     if (!nightMode) {
         wrapper.classList.add('night');
         clouds.forEach(cloud => {
-            cloud.classList.add('night'); // adicina a mensagem
+            cloud.classList.add('night'); // Adiciona a classe 'night' às nuvens
         });
         speechBubble.style.display = 'block';
-        messageElement.textContent = 'Nossa, já escureceu e você ainda não apertou o botão, hehe';
+        messageElement.textContent = 'Nossa, já está escurecendo e você esqueceu de apertar o botão, hehe.';
         nightMode = true;
     }
 }
@@ -72,6 +72,11 @@ function resetNightTimeout() {
     clearTimeout(nightTimeout);
     nightTimeout = setTimeout(activateNightMode, 20000); // Reativa o modo noturno após 20 segundos
 }
+
+// Iniciar o temporizador de 20 segundos assim que a página carregar
+window.addEventListener('load', function () {
+    resetNightTimeout();
+});
 
 // Inicialize a primeira mensagem ao clicar no botão
 changeMessageButton.addEventListener('click', changeMessage);
