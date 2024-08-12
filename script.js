@@ -7,7 +7,7 @@ const messages = [
     "ele se sente muito feliz por ter sua amizade e acho que ele gostaria de saber se você sente o mesmo.",
     "Então é isso, Bea. Parabéns pelo seu dia e que venham muitos outros aniversários,",
     "mais antes de ir um poema de adeus,",
-    "Adeus, Joven Bruxo(a) No castelo de Hogwarts, onde a magia é real, Nos despedimos agora,",
+    "Adeus, Joven Bruxa No castelo de Hogwarts, onde a magia é real, Nos despedimos agora,",
     "com um toque especial. Os feitiços da amizade, com sua luz, brilham, Mesmo que separados, nossos corações não se afastam,",
     "Que a varinha da sorte te guie com precisão, Como um feitiço lançado com pura intenção,",
     "Que as estrelas de Grifinória ilumine seu caminho, E os segredos de Sonserina te tragam um destino,",
@@ -15,7 +15,7 @@ const messages = [
     "E que as descobertas de Lufa-Lufa sejam sempre verdadeiras, Como a lealdade e a coragem das mais nobres maneiras.",
     "Adeus, por ora, mas lembre-se sempre, Que a magia que compartilhamos é um eterno presente;",
     "Nos veremos novamente, seja em sonhos ou feitiços, Na próxima trama de nossas vidas, repleta de encantos e riscos.",
-    "Beijos e abraços Beatriz <3 <3 <3,"
+    "Beijos e abraços Beatriz ❤❤❤,"
 ];
 
 let currentMessageIndex = -1; // Inicialize com -1 para exibir a primeira mensagem no primeiro clique
